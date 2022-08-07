@@ -14,33 +14,77 @@
     />
 
     <title>Hello, world!</title>
-
   </head>
 
-<style>
-section.welcome-webstudents{
-    background-color: #7979d2;
+  <style>
+    section.welcome-webstudents {
+      background-color: #7979d2;
+      margin-bottom: 15px;
+    }
+
+    .card {
+      background-color: #7979d2;
+      color: white;
+      margin: 70px;
+      padding: 20px;
+      border: 0px;
+    }
+
+    .card-text {
+      padding-right: 30px;
+    }
+
+    .col{
+        display: flex;
+    }
+
+    .services-img{
+              
+        background-color: rgb(236, 207, 163);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 5px;
+        
+    }
+
+    .services-image{
+        
+        width: 30px;
+        height: 15px;
+        position: relative;
+        left: 18%;
+        top: 15%;
+              
+    }
+
+    h6{
+        margin: 0;
+    }
+
+    .recommended-img{
+     object-fit: contain;
+     overflow: hidden;
+      
+    }
+
+    .col{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .checked {
+  color: orange;
 }
-
-.card{
-    background-color: #7979d2;
-    color: white;
-    margin: 70px;
-    padding: 20px;
-    border: 0px;
-}
-
-.card-text{
-  padding-right: 30px;
-}
-</style>
-
-
+  </style>
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+       
+       <div><img src="logo.svg" alt="" /></div>
+        
+
         <button
           class="navbar-toggler"
           type="button"
@@ -127,41 +171,91 @@ section.welcome-webstudents{
       </div>
     </nav>
 
-    
-
     <section class="welcome-webstudents">
-        <div class="container-fluid" >
-            <div class="row" >
-                <div class="col-sm-12 col-lg-6" >
-                    <div class="hero-intro" >
-                        <div class="card">
-                            
-                            <div class="card-body">
-                              <h2 class="card-title">Welcome Web Students!</h2>
-                              <p class="card-text">Hand-picked instructor and expertely crafted courses, designed for the modern students and entrepreneur.</p>
-                              <a href="#" class="btn btn-success">Browse courses</a>
-                              
-                              
-                            </div>
-                          </div>
-                    </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6">
+            <div class="hero-intro">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="card-title">Welcome Web Students!</h2>
+                  <p class="card-text">
+                    Hand-picked instructor and expertely crafted courses,
+                    designed for the modern students and entrepreneur.
+                  </p>
+                  <a href="#" class="btn btn-success">Browse courses</a>
+                  <a href="#" class="btn btn-light btn-success"
+                    >Are You Instructor?</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6">
+            <img class="hero-image" src="hero-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col col-sm-12 col-lg-4">
+            <div class="services-img" ><img class="services-image" src="video.svg" alt="" /></div>
+            <div class="services-text">
+              <h6>30,000 online courses</h6>
+              <p>Enjoy a variety of fresh topics</p>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-lg-4">
+            <div class="services-img" ><img class="services-image" src="video.svg" alt="" /></div>
+            <div class="services-text">
+              <h6>Expert instruction</h6>
+              <p>Find the right instructor for you</p>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-lg-4">
+            <div class="services-img" ><img class="services-image" src="clock.svg" alt="" /></div>
+            <div class="services-text">
+              <h6>Lifetime access</h6>
+              <p>Learn on your schedule</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recommended">
+        <h3>Recommended to you</h3>
+
+        <div class="container">
+            <div class="row">
+                <div class="col col-sm-6 col-lg-3">
+                    <img class="recommended-img" src="course-graphql.jpg" alt="">
                     
+                    <div>
+                      <p>GraphQL:introduction to graphQL for beginners</p>
+                      <span><img src="clock.svg" alt=""> 2h 40m</span> 
+                      <span>Advance</span> 
+                      
+                    </div>
 
                 </div>
-
-                <div class="col-sm-12 col-lg-6" >
-                    <img class="hero-image" src="hero-img.png" alt=""> 
-
-                </div>
+                
+                
 
             </div>
 
         </div>
+
+
+
+
+
+
     </section>
-
-    <section class="services"></section>
-
-    <section class="recommended"></section>
 
     <section class="most-popular"></section>
 
